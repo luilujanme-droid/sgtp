@@ -1,0 +1,19 @@
+:root { --bg:#eef1f3; --panel:#fff; --ink:#16222b; --muted:#5b6b78; --line:#c5ced6; --accent:#0b5fa5; --danger:#b3261e; --ok:#1e7a46; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.4 system-ui,"Segoe UI",Roboto,sans-serif; }
+main { max-width:520px; margin:0 auto; padding:16px; }
+h1 { font-size:1.4rem; margin:8px 0 4px; }
+.sub { color:var(--muted); margin:0 0 16px; }
+form { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:16px; display:grid; gap:14px; }
+label { display:grid; gap:6px; font-weight:600; }
+input,select,textarea { font:inherit; padding:12px; border:1px solid var(--line); border-radius:6px; background:#fff; min-height:48px; }
+textarea { min-height:84px; resize:vertical; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+button { font:inherit; font-weight:600; min-height:48px; padding:0 16px; border-radius:6px; border:1px solid var(--accent); background:var(--accent); color:#fff; cursor:pointer; }
+button.sec { background:#fff; color:var(--accent); }
+button.sec.on { background:var(--accent); color:#fff; }
+button:disabled { opacity:.6; }
+.fila { display:flex; gap:8px; flex-wrap:wrap; }
+.fila > button { flex:1; }
+.error { color:var(--danger); font-weight:600; margin:0; }
+.exito { color:var(--ok); font-weight:600; margin:0; }
